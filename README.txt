@@ -12,12 +12,9 @@ Contents
   IEEEtran.cls                 Supplied IEEE class, unchanged
   code/legacy/                 12 unchanged implementation/plotting scripts
   requirements.txt             Versions observed in the local check environment
-  docs/PROVENANCE.txt           Source-relative origins and SHA-256 checksums
-  docs/DATA_SCHEMA.txt          Input fields only; no records
-  docs/KNOWN_ISSUES.txt         Known execution and manuscript-alignment gaps
 
 Start here
-  Read the supplement PDF and docs/KNOWN_ISSUES.txt before running experiments.
+  Read the supplement PDF, including Section IV, before running experiments.
   The archived scripts are not certified to reproduce the paper's tables.
   Several scripts load data and begin training at import time.
 
@@ -35,7 +32,7 @@ Historical experiment entry points
   Causal_Inference.py, ablation_study.py, and jev_stackelberg_comparison.py
   are archived in code/legacy/. They require the private input CSVs and,
   for some entry points, missing helper functions. They use different
-  working-directory assumptions; see the supplement and issue notes.
+  working-directory assumptions; see Sections II and IV of the supplement.
 
 Provenance and reproduction scope
   The original project README contains the same reported Feed CTR improvements
@@ -61,7 +58,8 @@ Documentation split
 The two-page supplement retains inventories, compact single-column tables,
 environment information, and detailed artifact limitations. Model interfaces, training/ranking
 defaults, input processing, metric behavior, and verification scope are explained
-in Section VIII of the 12-page main paper. The package retains the original code,
-requirements, provenance, data-schema documentation, and known-issue notes.
+in Section VIII of the 12-page main paper. The supplement PDF contains the input
+fields and reproducibility limitations; the package retains the original code
+and requirements.
 
 LaTeX uses the standard orcidlink package for the linked iD icons.

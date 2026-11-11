@@ -14,13 +14,14 @@ Authors: Wenjing Li, Jiang Rong, Zhenzhe Zheng, and Fan Wu.
 
 ## Contents of the complete ZIP
 
-- `code/legacy/`: twelve unchanged implementation and plotting scripts.
+- `code/legacy/`: twelve implementation and plotting scripts using generic input names.
 - `requirements.txt`: versions observed in the local check environment.
 - LaTeX source and the IEEE class needed to compile the supplement.
 
 **No dataset files, model checkpoints, or private industrial logs are included.**
-The input schema in the supplement PDF documents field names only. This repository makes no promise
-of a later data release.
+The code uses generic semantic column names and input filenames. No internal
+schema or name mapping is included. This repository makes no promise of a later
+data release.
 
 ## Using the artifacts
 
@@ -40,6 +41,7 @@ not resolve these limitations.
 ## Reproducibility scope
 
 This repository is an implementation snapshot, not a certified reproduction of
-the paper's tables. The original scripts are preserved unchanged. Missing
+the paper's tables. Input identifiers and filenames have been generalized;
+algorithmic logic and numeric settings are retained. Missing
 helpers, differences in evaluation settings and metric branches, and absent
 final-run provenance remain documented in the supplement PDF and main paper.

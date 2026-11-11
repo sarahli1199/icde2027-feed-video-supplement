@@ -10,7 +10,7 @@ are included. No data-availability or release promise is made.
 Contents
   Li_ICDE_Supplement.pdf / .tex  Supplementary implementation and artifact guide
   IEEEtran.cls                 Supplied IEEE class, unchanged
-  code/legacy/                 12 unchanged implementation/plotting scripts
+  code/legacy/                 12 implementation/plotting scripts with generic input names
   requirements.txt             Versions observed in the local check environment
 
 Start here
@@ -33,14 +33,18 @@ Historical experiment entry points
   are archived in code/legacy/. They require the private input CSVs and,
   for some entry points, missing helper functions. They use different
   working-directory assumptions; see Sections II and IV of the supplement.
+  Public input filenames are feed_interactions.csv and video_interactions.csv.
+  Match any locally prepared input to the generic names used in the code. No
+  internal-to-public name mapping or data records are included.
 
 Provenance and reproduction scope
   The original project README contains the same reported Feed CTR improvements
   (20.00%, 7.59%, 5.06%) and JEV+ improvements (19.74%, 17.90%, 23.94%) as
   the paper. This supports the project's relevance but does not identify the
   exact code revision, seeds, data split, or run behind each reported number.
-  The original code has been preserved, including known limitations; no silent
-  scientific or evaluation fixes have been made.
+  Input-column names and input filenames use generic semantic names. Algorithmic
+  logic and numeric settings are retained, including known limitations; the files
+  are not byte-identical copies of the internal sources.
 
 Submission status
   This is an organized artifact snapshot and accompanying documentation.
@@ -58,8 +62,8 @@ Documentation split
 The two-page supplement retains inventories, compact single-column tables,
 environment information, and detailed artifact limitations. Model interfaces, training/ranking
 defaults, input processing, metric behavior, and verification scope are explained
-in Section VIII of the 12-page main paper. The supplement PDF contains the input
-fields and reproducibility limitations; the package retains the original code
-and requirements.
+in Section VIII of the 12-page main paper. The supplement PDF describes the input
+interface and reproducibility limitations; the package contains code using
+generic column names and filenames, together with requirements.
 
 LaTeX uses the standard orcidlink package for the linked iD icons.
